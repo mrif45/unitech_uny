@@ -1,0 +1,457 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 1px 1px 10px 0 rgb(0 0 0 / 5%);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  width: 100%;
+}
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+  padding-right: 15px;
+  letter-spacing: 1px;
+  transition: 0.3s all;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #3796bf;
+}
+
+.carousel-caption {
+  padding-top: 60px;
+  right: unset;
+  bottom: unset;
+  left: unset;
+}
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  z-index: 1;
+}
+.carousel-caption h3 {
+  font-size: 2rem;
+  z-index: 1;
+}
+.carousel-caption p {
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.filter-carousel {
+  background: linear-gradient(rgba(68, 124, 255, 0.5), rgba(0, 22, 73, 0.9));
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.filter-black {
+  background: linear-gradient(rgba(8, 138, 194, 0.5), rgba(3, 24, 73, 0.9));
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.carousel.slide,
+.carousel-inner,
+.carousel-item {
+  height: 660px;
+}
+.carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-jumbotron {
+  background: linear-gradient(45deg, #062161, #cddc396b);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.carousel-text {
+  text-align: center;
+}
+.carousel-text h1 {
+  text-shadow: 5px 0px #3796bf;
+  font-size: 5.5em;
+  margin: 0px auto;
+  transition: 0.3s all;
+}
+.carousel-text p {
+  width: 500px;
+  font-size: 1.12em;
+  margin: 10px auto;
+}
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 10;
+  opacity: 1;
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+  background: #cddc39;
+  color: #383d41;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 2px #0000001a;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  transition: 0.3s all;
+}
+
+.section-header {
+  padding: 10px 0px;
+}
+.divider-section {
+  background: #3796bf;
+  border-radius: 8px;
+  height: 6px;
+  margin: 10px 0px;
+  width: 100px;
+}
+.section-index {
+  padding: 70px 20px 80px;
+}
+.section-index h2 {
+  text-shadow: 3px 0px 0px #3796bf;
+  font-size: 3rem;
+  color: #062161;
+  letter-spacing: 0.5px;
+}
+.section-index p {
+  line-height: 2;
+}
+
+#section-timeline {
+  text-align: center;
+}
+#section-timeline .divider-section {
+  margin: 0 auto;
+}
+
+#section-dokumentasi {
+  background: #ececec;
+  text-align: center;
+}
+#section-dokumentasi p {
+  margin: auto;
+}
+#section-dokumentasi .divider-section {
+  margin: 20px auto;
+}
+
+.card-gallery {
+  background: #333;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  display: block;
+  height: 250px;
+  margin: 10px auto;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.card-gallery img {
+  height: auto;
+  width: 100%;
+  transition: 0.3s all;
+}
+.card-gallery:hover img {
+  transform: scale(1.25);
+}
+
+/* Timeline lomba */
+.list-timeline {
+  font-size: 11pt;
+  margin: 15px 0px;
+}
+.num-timeline {
+  background: #3796bf;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.wrap-content-timeline {
+  text-align: center;
+  display: block;
+  padding: 5px 0px;
+}
+.date-timeline {
+  padding: 0px 10px;
+  display: block;
+  font-weight: bold;
+}
+.content-timeline {
+  padding: 0 10px;
+  display: block;
+}
+
+/* Ketentuan lomba start */
+#ketentuan {
+  background: url("../img/banner-1.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 250px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+#ketentuan h1 {
+  text-shadow: 3px 0px #3796bf;
+  letter-spacing: 3px;
+  font-size: 3em;
+}
+#ketentuan .section-index {
+  padding: 80px 5px;
+  position: relative;
+  top: 0;
+  z-index: 3;
+}
+
+/* Kontak start */
+#kontak {
+  height: 450px;
+}
+#kontak iframe {
+  height: 300px;
+  width: 100%;
+}
+#kontak p {
+  width: auto;
+}
+#kontak ul {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0;
+}
+#kontak ul li {
+  margin: 10px 0px;
+}
+
+.btn-contact {
+  background: #2196f3;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  height: 35px;
+  position: relative;
+  line-height: 35px;
+  padding: 0px 20px 0px 50px;
+  overflow: hidden;
+  transition: 0.3s all;
+}
+.btn-contact:hover {
+  background: #1565c0;
+  text-decoration: none;
+  color: #ddd;
+}
+.btn-contact i {
+  font-size: 1.3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1565c0;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+}
+
+/* Footer start */
+footer {
+  border-top: 2px solid rgb(206, 206, 206);
+  background: #ffffff;
+  color: #1f1f1f;
+  padding: 0 0 0 20px;
+}
+#footer-media ul {
+  padding-inline-start: 0;
+}
+#footer-media ul li {
+  height: 32px;
+  list-style: none;
+  margin: 10px 0px;
+}
+#footer-media ul li a i {
+  background: #1f1f1f;
+  border-radius: 8px;
+  color: #ffffff;
+  height: 32px;
+  line-height: 32px;
+  width: 32px;
+  margin: 0 10px;
+  text-align: center;
+}
+#footer-media ul li a {
+  color: #1f1f1f;
+  font-size: 12pt;
+  transition: 0.2s all;
+}
+#footer-media ul li a:hover {
+  color: #062161;
+  text-decoration: none;
+}
+#copy {
+  color: #8c8c8c;
+  font-size: 10pt;
+  padding: 10px 0px;
+}
+
+/* btn-top back to top */
+/* #btn-top {
+    display: inline-block;
+    background-color: rgb(55, 150, 191);
+    box-shadow: 0px 10px 15px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(10px);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#btn-top i {
+    color: #ffffff;
+    font-size: 2.5rem; 
+    align-items: center;
+    text-align: center;
+    
+} */
+/* #btn-top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+} */
+/* #btn-top:hover {
+    cursor: pointer;
+    background-color: #0d5f83;
+}
+#btn-top:active {
+    background-color: #555;
+}
+#btn-top.show {
+    opacity: 1;
+    visibility: visible;
+} */
+
+@media (max-width: 350px) {
+  .card-gallery {
+    height: 150px;
+    width: auto;
+  }
+  .card-gallery img {
+    transform: scale(1.2);
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar-brand img {
+    height: 40px;
+  }
+  .carousel-text {
+    padding: 0 50px;
+  }
+  .carousel-control-prev i,
+  .carousel-control-next i {
+    line-height: 30px;
+    height: 36px;
+    width: 36px;
+  }
+  .section-index p {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1.75rem;
+    max-width: 320px;
+    margin: auto;
+  }
+  .carousel-caption p {
+    max-width: 320px;
+    margin: 20px;
+  }
+  .carousel-text p {
+    max-width: 240px;
+  }
+  .carousel-text h1 {
+    font-size: 3.5rem;
+  }
+  .carousel-item img {
+    height: 100%;
+    width: auto !important;
+  }
+  .section-index p {
+    width: auto;
+  }
+  #ketentuan {
+    height: auto;
+  }
+  #kontak {
+    height: auto;
+  }
+  #map-wrapper {
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  #kontak {
+    height: auto;
+  }
+}
